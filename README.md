@@ -60,7 +60,7 @@ for Wei Fantasy Online with fantasy game theme inspired by Toram Online.
 
 -   **Email**: dev@weifantasy.online
 -   **Website**: www.weifantasy.online
--   **Discord**: discord.gg/weifantasy
+-   **Discord**: discord.gg/mkEKRksn
 -   **Twitter**: @WeiFantasy
 
 ## 📄 License
