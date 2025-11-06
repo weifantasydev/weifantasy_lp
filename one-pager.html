@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Wei Fantasy Online - Investment One Pager</title>
+		<meta
+			name="description"
+			content="Wei Fantasy Online - Blockchain Gaming Investment Opportunity"
+		/>
+		<link rel="stylesheet" href="assets/css/styles.css" />
+		<style>
+			/* One-Pager Specific Styles */
+			body.one-pager {
+				background: var(--primary-dark);
+				padding: 0;
+				margin: 0;
+			}
+
+			.one-pager header {
+				position: relative;
+				padding: 2rem 0;
+			}
+
+			.one-pager-container {
+				max-width: 1200px;
+				margin: 0 auto;
+				padding: 2rem;
+				background: var(--primary-dark);
+			}
+
+			.one-pager-hero {
+				text-align: center;
+				padding: 3rem 0;
+				border-bottom: 2px solid rgba(74, 59, 168, 0.3);
+				margin-bottom: 3rem;
+			}
+
+			.one-pager-hero h1 {
+				font-size: 3.5rem;
+				margin-bottom: 1rem;
+			}
+
+			.one-pager-hero .tagline {
+				font-size: 1.5rem;
+				color: var(--accent-cyan);
+				margin-bottom: 1rem;
+			}
+
+			.one-pager-hero .description {
+				font-size: 1.1rem;
+				color: var(--text-gray);
+				max-width: 800px;
+				margin: 0 auto;
+			}
+
+			.one-pager-grid {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				gap: 2rem;
+				margin-bottom: 3rem;
+			}
+
+			.one-pager-section {
+				background: var(--gradient-card);
+				padding: 2rem;
+				border-radius: 15px;
+				border: 1px solid rgba(74, 59, 168, 0.3);
+			}
+
+			.one-pager-section h2 {
+				font-size: 1.8rem;
+				color: var(--accent-cyan);
+				margin-bottom: 1.5rem;
+				border-bottom: 2px solid rgba(74, 59, 168, 0.3);
+				padding-bottom: 0.5rem;
+			}
+
+			.one-pager-section h3 {
+				font-size: 1.3rem;
+				color: var(--accent-purple);
+				margin-top: 1.5rem;
+				margin-bottom: 0.5rem;
+			}
+
+			.one-pager-stats {
+				display: grid;
+				grid-template-columns: repeat(4, 1fr);
+				gap: 1rem;
+				margin: 2rem 0;
+			}
+
+			.one-pager-stat {
+				text-align: center;
+				padding: 1rem;
+				background: rgba(74, 59, 168, 0.2);
+				border-radius: 10px;
+				border: 1px solid rgba(74, 59, 168, 0.3);
+			}
+
+			.one-pager-stat .number {
+				font-size: 2rem;
+				font-weight: bold;
+				color: var(--accent-gold);
+				margin-bottom: 0.5rem;
+			}
+
+			.one-pager-stat .label {
+				font-size: 0.9rem;
+				color: var(--text-gray);
+			}
+
+			.one-pager-list {
+				list-style: none;
+				padding: 0;
+			}
+
+			.one-pager-list li {
+				padding: 0.5rem 0;
+				padding-left: 1.5rem;
+				position: relative;
+				color: var(--text-gray);
+			}
+
+			.one-pager-list li::before {
+				content: "✓";
+				position: absolute;
+				left: 0;
+				color: var(--accent-green);
+				font-weight: bold;
+			}
+
+			.one-pager-cta {
+				text-align: center;
+				padding: 3rem 0;
+				background: var(--gradient-card);
+				border-radius: 15px;
+				border: 2px solid var(--accent-gold);
+				margin-top: 3rem;
+			}
+
+			.one-pager-cta h2 {
+				font-size: 2.5rem;
+				margin-bottom: 1rem;
+			}
+
+			.one-pager-cta .contact-info {
+				margin-top: 2rem;
+				font-size: 1.1rem;
+				color: var(--text-gray);
+			}
+
+			.one-pager-cta .contact-info a {
+				color: var(--accent-cyan);
+				text-decoration: none;
+			}
+
+			/* Print Styles */
+			@media print {
+				.one-pager header,
+				.one-pager footer {
+					display: none;
+				}
+
+				.one-pager-container {
+					padding: 1rem;
+				}
+
+				.one-pager-grid {
+					page-break-inside: avoid;
+				}
+
+				.one-pager-section {
+					page-break-inside: avoid;
+				}
+			}
+
+			/* Mobile Responsive */
+			@media (max-width: 768px) {
+				.one-pager-grid {
+					grid-template-columns: 1fr;
+				}
+
+				.one-pager-stats {
+					grid-template-columns: repeat(2, 1fr);
+				}
+
+				.one-pager-hero h1 {
+					font-size: 2.5rem;
+				}
+			}
+		</style>
+	</head>
+	<body class="one-pager">
+		<header>
+			<nav>
+				<div class="logo">⚔️ Wei Fantasy Online</div>
+				<div class="hamburger" onclick="toggleMobileMenu()">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<ul class="nav-links">
+					<li><a href="index.html">Home</a></li>
+					<li>
+						<a href="one-pager.html" class="active">One Pager</a>
+					</li>
+					<li><a href="private-sale.html">Private Sale</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div class="one-pager-container">
+			<!-- Hero Section -->
+			<div class="one-pager-hero">
+				<h1>⚔️ Wei Fantasy Online</h1>
+				<p class="tagline">🏰 Bringing Gaming Into The Real World 🌍</p>
+				<p class="description">
+					An epic blockchain-integrated action RPG with sustainable
+					play-to-earn economics. Built on Polygon with true player
+					ownership and legendary adventures. Gameplay-first design by
+					veteran developers with 10+ years combined experience.
+				</p>
+			</div>
+
+			<!-- Key Stats -->
+			<div class="one-pager-stats">
+				<div class="one-pager-stat">
+					<div class="number">$420</div>
+					<div class="label">Avg Monthly Earnings</div>
+				</div>
+				<div class="one-pager-stat">
+					<div class="number">$0.001</div>
+					<div class="label">Transaction Fee</div>
+				</div>
+				<div class="one-pager-stat">
+					<div class="number">1B</div>
+					<div class="label">Fixed Token Supply</div>
+				</div>
+				<div class="one-pager-stat">
+					<div class="number">Q2 2026</div>
+					<div class="label">Alpha Launch</div>
+				</div>
+			</div>
+
+			<!-- Main Content Grid -->
+			<div class="one-pager-grid">
+				<!-- Investment Opportunity -->
+				<div class="one-pager-section">
+					<h2>💎 Investment Opportunity</h2>
+
+					<h3>Private Sale</h3>
+					<ul class="one-pager-list">
+						<li>Starting Price: $0.00003 per WFT</li>
+						<li>40% discount from DEX listing price</li>
+						<li>20M tokens available</li>
+						<li>Minimum investment: $500</li>
+						<li>Maximum investment: $50,000</li>
+						<li>Early supporter benefits included</li>
+					</ul>
+
+					<h3>Token Distribution</h3>
+					<ul class="one-pager-list">
+						<li>Private Sale: 1% (10M tokens)</li>
+						<li>Public Sale: 1.5% (15M tokens)</li>
+						<li>Liquidity Pool: 15% (150M tokens)</li>
+						<li>Team: 10% (vested 4 years)</li>
+						<li>Advisors: 5% (vested 2 years)</li>
+						<li>Marketing: 7.5%</li>
+						<li>Game Rewards: 60% (released over 10 years)</li>
+					</ul>
+
+					<h3>Use of Funds</h3>
+					<ul class="one-pager-list">
+						<li>40% - Game Development</li>
+						<li>25% - Marketing & Community</li>
+						<li>20% - Team Expansion</li>
+						<li>10% - Operations & Infrastructure</li>
+						<li>5% - Legal & Compliance</li>
+					</ul>
+				</div>
+
+				<!-- Tokenomics -->
+				<div class="one-pager-section">
+					<h2>💰 Sustainable Tokenomics</h2>
+
+					<h3>Wei Fantasy Token (WFT)</h3>
+					<ul class="one-pager-list">
+						<li>Standard: ERC-20</li>
+						<li>Blockchain: Polygon (Layer 2)</li>
+						<li>Total Supply: 1,000,000,000 (Fixed)</li>
+						<li>Transaction Fee: ~$0.001</li>
+						<li>Type: Deflationary</li>
+					</ul>
+
+					<h3>Token Sinks (Deflationary)</h3>
+					<ul class="one-pager-list">
+						<li>Equipment upgrades & enhancements</li>
+						<li>Character respecs & customization</li>
+						<li>Premium dungeon entries</li>
+						<li>NFT marketplace fees</li>
+						<li>Staking & governance participation</li>
+						<li>Exponential burn mechanism</li>
+					</ul>
+
+					<h3>Token Sources (Inflationary)</h3>
+					<ul class="one-pager-list">
+						<li>Dungeon completions (skill-based)</li>
+						<li>Daily quests & achievements</li>
+						<li>PvP rewards & tournaments</li>
+						<li>Guild activities & cooperation</li>
+						<li>Limited to 60% of total supply</li>
+					</ul>
+				</div>
+
+				<!-- Game Features -->
+				<div class="one-pager-section">
+					<h2>🎮 Game Features</h2>
+
+					<h3>Core Gameplay</h3>
+					<ul class="one-pager-list">
+						<li>Top-down action RPG with real-time combat</li>
+						<li>Solo dungeons (5 difficulty tiers)</li>
+						<li>Co-op dungeons (2-4 players)</li>
+						<li>PvP Arena with ranked matches</li>
+						<li>Procedurally generated levels</li>
+						<li>Epic boss battles & legendary loot</li>
+					</ul>
+
+					<h3>Blockchain Integration</h3>
+					<ul class="one-pager-list">
+						<li>True NFT ownership of items</li>
+						<li>Non-custodial wallet integration</li>
+						<li>Instant withdrawals to Polygon</li>
+						<li>Transparent on-chain transactions</li>
+						<li>Smart contract audited security</li>
+						<li>Multi-sig treasury management</li>
+					</ul>
+
+					<h3>Earning Potential</h3>
+					<ul class="one-pager-list">
+						<li>Casual (1hr/day): $105/month</li>
+						<li>Dedicated (3hrs/day): $420/month</li>
+						<li>Hardcore (6hrs/day): $1,050/month</li>
+						<li>Professional (8+hrs/day): $3,250/month</li>
+					</ul>
+				</div>
+
+				<!-- Team & Roadmap -->
+				<div class="one-pager-section">
+					<h2>🚀 Team & Roadmap</h2>
+
+					<h3>Core Team</h3>
+					<ul class="one-pager-list">
+						<li>10+ years combined game development experience</li>
+						<li>Veteran developers from major studios</li>
+						<li>Blockchain experts & economists</li>
+						<li>Proven track record in game design</li>
+					</ul>
+
+					<h3>Development Roadmap</h3>
+					<ul class="one-pager-list">
+						<li><strong>Q4 2025:</strong> Concept & Whitepaper</li>
+						<li>
+							<strong>Q1 2026:</strong> Core Development Start
+						</li>
+						<li>
+							<strong>Q2 2026:</strong> Alpha Launch (Closed Beta)
+						</li>
+						<li><strong>Q3 2026:</strong> Public Beta Launch</li>
+						<li><strong>Q4 2026:</strong> Full Game Release</li>
+						<li>
+							<strong>2027+:</strong> Expansions & New Features
+						</li>
+					</ul>
+
+					<h3>Competitive Advantages</h3>
+					<ul class="one-pager-list">
+						<li>Gameplay-first approach (not token-first)</li>
+						<li>Low transaction costs (Polygon)</li>
+						<li>Deflationary tokenomics</li>
+						<li>Skill-based rewards system</li>
+						<li>True player ownership</li>
+						<li>Long-term sustainability focus</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- Call to Action -->
+			<div class="one-pager-cta">
+				<h2>🚀 Join the Revolution</h2>
+				<p
+					style="
+						font-size: 1.2rem;
+						color: var(--text-gray);
+						margin-bottom: 2rem;
+					"
+				>
+					Be part of the next generation of blockchain gaming. Invest
+					in a project that prioritizes gameplay, sustainability, and
+					player value.
+				</p>
+
+				<div
+					style="
+						display: flex;
+						gap: 1rem;
+						justify-content: center;
+						flex-wrap: wrap;
+					"
+				>
+					<a
+						href="private-sale.html"
+						class="btn btn-gold"
+						style="font-size: 1.1rem; padding: 1rem 2rem"
+					>
+						Join Private Sale
+					</a>
+					<a
+						href="whitepaper.html"
+						class="btn btn-primary"
+						style="font-size: 1.1rem; padding: 1rem 2rem"
+					>
+						Read Whitepaper
+					</a>
+				</div>
+
+				<div class="contact-info">
+					<p style="margin-top: 2rem">
+						<strong>Contact:</strong>
+						<a href="mailto:dev@weifantasy.online"
+							>dev@weifantasy.online</a
+						>
+						|
+						<a href="https://www.weifantasy.online"
+							>www.weifantasy.online</a
+						>
+					</p>
+					<p
+						style="
+							margin-top: 1rem;
+							font-size: 0.9rem;
+							opacity: 0.8;
+						"
+					>
+						This document is for informational purposes only and
+						does not constitute investment advice. Please conduct
+						your own research before making any investment
+						decisions.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<footer
+			style="
+				margin-top: 3rem;
+				padding: 2rem;
+				text-align: center;
+				border-top: 2px solid rgba(74, 59, 168, 0.3);
+			"
+		>
+			<div class="footer-content">
+				<p style="color: var(--text-gray)">
+					&copy; 2025 Wei Fantasy Online. All rights reserved.
+				</p>
+			</div>
+		</footer>
+
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>
