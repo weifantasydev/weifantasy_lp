@@ -69,8 +69,19 @@ document.addEventListener("DOMContentLoaded", function () {
 		const minutesEl = document.getElementById("minutes");
 		const secondsEl = document.getElementById("seconds");
 
-		// Critical Check: Ensure all elements are present before proceeding
-		if (!daysEl || !hoursEl || !minutesEl || !secondsEl) {
+		// Get hero countdown elements
+		const heroDaysEl = document.getElementById("hero-days");
+		const heroHoursEl = document.getElementById("hero-hours");
+		const heroMinutesEl = document.getElementById("hero-minutes");
+		const heroSecondsEl = document.getElementById("hero-seconds");
+
+		// Critical Check: Ensure at least one set of elements is present
+		if (
+			(!daysEl && !heroDaysEl) ||
+			(!hoursEl && !heroHoursEl) ||
+			(!minutesEl && !heroMinutesEl) ||
+			(!secondsEl && !heroSecondsEl)
+		) {
 			clearInterval(window.countdownInterval);
 			console.error("Countdown elements not found. Stopping timer.");
 			return;
@@ -78,10 +89,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 		if (distance < 0) {
 			// Countdown has ended
-			daysEl.textContent = "00";
-			hoursEl.textContent = "00";
-			minutesEl.textContent = "00";
-			secondsEl.textContent = "00";
+			if (daysEl) daysEl.textContent = "00";
+			if (hoursEl) hoursEl.textContent = "00";
+			if (minutesEl) minutesEl.textContent = "00";
+			if (secondsEl) secondsEl.textContent = "00";
+			if (heroDaysEl) heroDaysEl.textContent = "00";
+			if (heroHoursEl) heroHoursEl.textContent = "00";
+			if (heroMinutesEl) heroMinutesEl.textContent = "00";
+			if (heroSecondsEl) heroSecondsEl.textContent = "00";
 			clearInterval(window.countdownInterval);
 			return;
 		}
@@ -98,10 +113,19 @@ document.addEventListener("DOMContentLoaded", function () {
 		const seconds = Math.floor((distance % oneMinute) / oneSecond);
 
 		// Update DOM elements with zero-padding
-		daysEl.textContent = String(days).padStart(2, "0");
-		hoursEl.textContent = String(hours).padStart(2, "0");
-		minutesEl.textContent = String(minutes).padStart(2, "0");
-		secondsEl.textContent = String(seconds).padStart(2, "0");
+		if (daysEl) daysEl.textContent = String(days).padStart(2, "0");
+		if (hoursEl) hoursEl.textContent = String(hours).padStart(2, "0");
+		if (minutesEl) minutesEl.textContent = String(minutes).padStart(2, "0");
+		if (secondsEl) secondsEl.textContent = String(seconds).padStart(2, "0");
+
+		// Update hero countdown elements
+		if (heroDaysEl) heroDaysEl.textContent = String(days).padStart(2, "0");
+		if (heroHoursEl)
+			heroHoursEl.textContent = String(hours).padStart(2, "0");
+		if (heroMinutesEl)
+			heroMinutesEl.textContent = String(minutes).padStart(2, "0");
+		if (heroSecondsEl)
+			heroSecondsEl.textContent = String(seconds).padStart(2, "0");
 	}
 
 	// Call the function once immediately to show the initial time.
